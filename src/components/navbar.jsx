@@ -1,19 +1,28 @@
+import { Box, Typography } from '@mui/material';
 import { Stack } from "@mui/system";
+import logo from '../assets/logo.svg'
 
-export default function Navbar(){
-    return(
-        <Stack 
-            direction='columns' 
-            sx={{ bgcolor: 'primary.main' }} 
-            justifyContent='space-between' 
+const menus = ['Beranda', 'Berita & Kegiatan', 'Ekonomi Kreatif', 'Tentang'];
+
+export default function Navbar() {
+    return (
+        <Stack
+            direction='columns'
+            sx={{ bgcolor: '#fff' }}
+            justifyContent='space-between'
             alignItems='center'
+            px={5}
+            height={80}
         >
-            <h1>Hmjti</h1>
-            <Stack direction='columns' >
-                <p>berand1</p>
-                <p>berand1</p>
-                <p>berand1</p>
-                <p>berand1</p>
+            <Box
+                component='img'
+                src={logo}
+                height={55}
+            />
+            <Stack direction='columns' columnGap={3.7}>
+                {menus.map((menu) => (
+                    <Typography>{menu}</Typography>
+                ))}
             </Stack>
         </Stack>
     )
