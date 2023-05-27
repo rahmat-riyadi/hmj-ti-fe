@@ -2,7 +2,7 @@ import { Navigate } from 'react-router-dom'
 
 export default function ProtectedRoute({ children }) {
 
-    const isAuth = true
+    const isAuth = true;
 
     if (isAuth) {
         return children

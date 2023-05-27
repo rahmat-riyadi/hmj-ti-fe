@@ -1,0 +1,96 @@
+import { Box, Container, Grid, Typography } from '@mui/material';
+import patternTop from '../assets/patternTop.png';
+import patternBottom from '../assets/patternBottom.png';
+import zaim from '../assets/zaim.png';
+import rere from '../assets/rere.png';
+import dani from '../assets/dani.png';
+// import SecondaryCard from '../components/secondaryCard';
+import Cards from '../components/card';
+
+// import { ProductCard } from '../components/card';
+
+const Ekref = () => {
+    return (
+        <>
+            <Box
+                bgcolor='primary.main'
+                height={372.5}
+                width='100%'
+                display='flex'
+                justifyContent='center'
+                alignItems='center'
+                position='relative'
+            >
+                <Box
+                    component='img'
+                    src={patternTop}
+                    position='absolute'
+                    left={0}
+                    top={0}
+                    height={{ xs: '50%', md: '100%' }}
+                    marginLeft={-10}
+                />
+                <Box
+                    component='img'
+                    src={patternBottom}
+                    position='absolute'
+                    right={0}
+                    bottom={0}
+                    height={{ xs: '50%', md: '100%' }}
+                    marginRight={-10}
+                />
+                <Box
+                    ml={0}
+                    color='#fff'
+                >
+                    <Typography fontWeight={600} fontSize='3rem'>Ekonomi Kreatif</Typography>
+                    <Typography
+                        fontSize='1rem'
+                        fontWeight={300}
+                    >
+                        Ekonomi kreatif, peluang tanpa batas.
+                    </Typography>
+                </Box>
+                <Box zIndex={1} height='100%' position='relative' display={{ xs: 'none', md: 'block' }}>
+                    <Box
+                        component='img'
+                        src={dani}
+                        height='100%'
+                        mr={-16.5}
+                    />
+                    <Box
+                        component='img'
+                        src={zaim}
+                        position='absolute'
+                        height='100%'
+                    />
+                    <Box
+                        component='img'
+                        src={rere}
+                        height='100%'
+                        ml={12.5}
+                    />
+                </Box>
+            </Box>
+            {/* <Box bgcolor='#f9fafb' paddingTop='56px' paddingLeft='42px' width='100%' height='100vh' justifyContent='center' alignItems='center'>
+                <Cards.ProductCard />
+            </Box> */}
+
+            <Container maxWidth="xl" sx={{ py: 9, bgcolor:'#F9FAFB' }}>
+                <Grid container spacing={3} justifyContent='center'>
+                    {
+                        [1, 1, 1, 1, 1].map(e => {
+                            return (
+                                <Grid item>
+                                    <Cards.ProductCard />
+                                </Grid>
+                            )
+                        })
+                    }
+                </Grid>
+            </Container>
+        </>
+    );
+}
+
+export default Ekref;

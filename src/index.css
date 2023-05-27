@@ -3,4 +3,45 @@
 * {
   margin: 0;
   font-family: 'Plus Jakarta Sans', sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+::-webkit-scrollbar {
+  background: none;
+  width: 0;
+}
+
+.heading::after {
+  content: '';
+  display: block;
+  background-color: #B20600;
+  height: 4px;
+  margin-top: 4px;
+  border-radius: 28px;
+  width: 75px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+* {
+  user-select: none;
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+}
+
+;
+
+button,
+button:active,
+button:focus {
+  outline: none;
 }
