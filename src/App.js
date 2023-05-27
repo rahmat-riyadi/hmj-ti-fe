@@ -2,7 +2,7 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import MainLayout from './layout/mainLayout';
 import Index from './pages';
-import Article from './pages/article';
+// import Article from './pages/article';
 import Berita from './pages/berita';
 import Ekref from './pages/ekref';
 import Login from './pages/login';
