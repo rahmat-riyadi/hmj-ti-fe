@@ -1,4 +1,4 @@
-import Footer from '../components/footer';
+// import Footer from '../components/footer';
 import HeroArticle from '../layout/heroArticle';
 import Desc from '../layout/desc';
 import Hero from '../layout/hero';

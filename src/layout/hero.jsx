@@ -1,4 +1,4 @@
-import { Box, Slide, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import "swiper/css/pagination";
@@ -6,7 +6,7 @@ import "swiper/css/navigation";
 import './hero.css'
 import "swiper/css/effect-fade";
 import { Autoplay, Pagination, Navigation, Parallax } from "swiper";
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 // import hero from '../assets/hero.png'      
 
 const data = [
@@ -38,7 +38,7 @@ const data = [
 
 const Hero = () => {
     const [activeIndex, setActiveIndex] = useState(0);
-    const [highlights, setHighlight] = useState([]);
+    // const [highlights, setHighlight] = useState([]);
 
     // const getHighlight = async () => {
     //     try {
@@ -104,7 +104,7 @@ const Hero = () => {
                         />
                     </SwiperSlide>
                 ))}
-                {highlights && <>
+                {<>
                     <Box
                         position='absolute'
                         top={0}

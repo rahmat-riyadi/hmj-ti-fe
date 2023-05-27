@@ -1,10 +1,10 @@
 import { Box, Typography } from '@mui/material';
-import { useParams } from 'react-router-dom';
-import Footer from '../components/footer';
+// import { useParams } from 'react-router-dom';
+// import Footer from '../components/footer';
 import detailPic from '../assets/article-detail.png'
 
 const ArticleDetail = () => {
-    const { id } = useParams()
+    // const { id } = useParams()
 
     return (
         <Box display='flex' alignItems='center' flexDirection='column'>

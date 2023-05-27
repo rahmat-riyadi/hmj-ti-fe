@@ -1,4 +1,4 @@
-import { Box, Input, InputBase, InputLabel, TextField, createTheme } from '@mui/material';
+import { Box, InputLabel, TextField } from '@mui/material';
 
 const style = {
     label: {
