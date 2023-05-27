@@ -1,19 +1,19 @@
-import { Box, Typography, Stack, TextField, Button, Container, Grid } from '@mui/material';
+import { Box, Typography, Stack, Button, Container, Grid } from '@mui/material';
 import dot from '../assets/dot.svg';
-import telLogo from '../assets/tel.svg';
-import classes from '../styles/heroFeedback.module.css';
+// import telLogo from '../assets/tel.svg';
+// import classes from '../styles/heroFeedback.module.css';
 import InputComponent from '../components/input';
 
-const styles = {
-    title: {
-        fontWeight: 200,
-        fontSize: 9,
-    },
-    contact: {
-        fontWeight: 600,
-        fontSize: 12,
-    }
-}
+// const styles = {
+//     title: {
+//         fontWeight: 200,
+//         fontSize: 9,
+//     },
+//     contact: {
+//         fontWeight: 600,
+//         fontSize: 12,
+//     }
+// }
 
 const Feedback = () => {
     return (

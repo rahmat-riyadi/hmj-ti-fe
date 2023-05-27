@@ -5,7 +5,7 @@ import Typography from '@mui/material/Typography';
 import { Box, CardMedia, Divider } from '@mui/material';
 import { NavLink } from 'react-router-dom';
 import image from '../assets/ekref.png'
-import imageBorder from '../assets/ekrefCard.png'
+// import imageBorder from '../assets/ekrefCard.png'
 
 const ArticleCard = (props) => {
     const title = props.data.title;
@@ -132,8 +132,8 @@ const ArticleCard = (props) => {
 }
 
 export const ProductCard = (props) => {
-    const date = '17 November 2023';
-    const newdate = date.replace(/ /g, '-');
+    // const date = '17 November 2023';
+    // const newdate = date.replace(/ /g, '-');
 
     return (
         // <Card
