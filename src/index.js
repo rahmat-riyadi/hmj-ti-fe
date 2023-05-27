@@ -15,7 +15,10 @@ const theme = createTheme({
   },
   palette: {
     primary: {
-      main: '#BA1F1A'
+      main: '#B20600',
+    },
+    gradient: {
+      main: 'linear-gradient(to top, red, #000)',
     },
   }
 })

@@ -3,21 +3,31 @@ import './App.css';
 import MainLayout from './layout/mainLayout';
 import Index from './pages';
 import Article from './pages/article';
+import Berita from './pages/berita';
+import Ekref from './pages/ekref';
 import Login from './pages/login';
+import Tentang from './pages/tentang';
 import ProtectedRoute from './utils/protectedRoute';
+import ArticleDetail from './pages/article-detail';
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path='/login' element={<Login/>} />
+        <Route path='/login' element={<Login />} />
         <Route path='/' element={
           <ProtectedRoute>
-            <MainLayout/>
+            <MainLayout />
           </ProtectedRoute>
         }>
-          <Route index element={<Index/>} />
-          <Route path='berita' element={<Article/>} />
+          <Route index element={<Index />} />
+          <Route path='berita-&-kegiatan' >
+            <Route index element={<Berita />} />
+            <Route path=':id' element={<ArticleDetail />} />
+
+          </Route>
+          <Route path='tentang' element={<Tentang />} />
+          <Route path='ekonomi-kreatif' element={<Ekref />} />
         </Route>
       </Routes>
     </div>
