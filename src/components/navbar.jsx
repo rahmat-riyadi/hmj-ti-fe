@@ -4,6 +4,7 @@ import { NavLink } from 'react-router-dom';
 import logo from '../assets/logo.svg'
 import './navbar.module.css'
 import { useState } from 'react';
+import { Menu } from '@mui/icons-material';
 
 const menus = ['Berita & Kegiatan', 'Ekonomi Kreatif', 'Tentang'];
 
@@ -30,13 +31,16 @@ export default function Navbar() {
                     alignItems='center'
                     px={2.5}
                 >
+                    {/* <NavLink to='/'> */}
                     <Box
                         component='img'
                         src={logo}
                         height={55}
                     />
-                    <Box position='absolute' display={{ sx: 'block', md: 'none' }} zIndex={10} right={0}>
-                        <input type='button' onClick={() => { showNav() }}></input>
+                    {/* </NavLink> */}
+                    <Box position='absolute' display={{ xs: 'block', md: 'none' }} zIndex={100} right={16}>
+                        {/* <input type='' onClick={() => { showNav() }}></input> */}
+                        <Menu onClick={() => { showNav() }} sx={{ zIndex: 99, color: 'primary.main' }} />
                     </Box>
                     <Stack
                         direction='row'
