@@ -8,6 +8,7 @@ const VideoFrame = () => {
         <Stack
             width='100%'
             height='75vh'
+            py={10}
             justifyContent='center'
             alignItems='center'
         >

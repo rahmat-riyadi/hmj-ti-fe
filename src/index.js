@@ -20,6 +20,11 @@ const theme = createTheme({
     gradient: {
       main: 'linear-gradient(to top, red, #000)',
     },
+    text: {
+      main: '#121212',
+      secondary: '#454F5B',
+      gray: '#9A9EA6'
+    }
   }
 })
 

@@ -22,7 +22,7 @@ const HeroArticle = () => {
     return (
         <Box
             textAlign='center'
-            py={13}
+            pb={13}
             display='flex'
             flexDirection='column'
             alignItems='center'
@@ -45,13 +45,12 @@ const HeroArticle = () => {
                 alignItems='center'
                 spacing={3}
                 justifyContent='center'
-                xs={12}
             >
                 {articles?.map(items => {
                     return (
                         <Grid
                             item
-                            xs={6}
+                            xs={12}
                             sm={6}
                             md={4}
                             display='flex'

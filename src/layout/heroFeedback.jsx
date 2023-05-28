@@ -92,7 +92,7 @@ const Feedback = () => {
                 zIndex={1}
             />
             <Box component='img' src={dot} height={{ xs: '20%', md: '35%' }} position='absolute' left={0} bottom={0}></Box>
-            <Container maxWidth="xl" sx={{ pt: 10, pb: 20 }}>
+            <Container maxWidth="lg" sx={{ pt: 10, pb: 20 }}>
                 <Box
                     position='relative'
                     textAlign='center'
@@ -104,7 +104,7 @@ const Feedback = () => {
                     alignItems='center'
                     zIndex={99}
                 >
-                    <Stack pb={3} gap={2}>
+                    <Stack mb={7} gap={2} width={{ xs: '100%', md: '75%' }}>
                         <Typography variant='h1' fontWeight={700} color='primary.main' fontSize={{ xs: 21, md: 30 }}>Kirimkan Pesan kepada Kami</Typography>
                         <Typography fontSize={{ xs: 13, md: 14 }}>Kirimkan pesan kepada kami untuk berbagi informasi, permintaan, atau komentar apa pun yang ingin Anda sampaikan. kami dengan senang hati dan akan meresponsnya</Typography>
                     </Stack>
@@ -125,8 +125,8 @@ const Feedback = () => {
                             <Grid item xs={12} md={12}>
                                 <InputComponent id='deskripsi' label='Deskripsi' required={true} multiline={true} />
                             </Grid>
-                            <Grid item xs={12} md={12}>
-                                <Button variant='contained' sx={{ textTransform: 'capitalize' }} fullWidth>Submit</Button>
+                            <Grid item xs={12} md={12} mt={2}>
+                                <Button variant='contained' sx={{ textTransform: 'capitalize', py: 1 }} fullWidth>Submit</Button>
                             </Grid>
                         </Grid>
                     </form>

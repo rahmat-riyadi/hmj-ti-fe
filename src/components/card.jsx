@@ -94,6 +94,7 @@ const ArticleCard = (props) => {
                     fontWeight={700}
                     fontSize={20}
                     pt={1}
+                    color='text.main'
                     textOverflow='ellipsis'
                 >
                     {title}
@@ -101,7 +102,7 @@ const ArticleCard = (props) => {
                 </Typography>
                 <Typography
                     variant='body2'
-                    color='#454F5B'
+                    color='text.secondary'
                     textAlign='justify'
                     fontSize={11}
                     pt={1}
