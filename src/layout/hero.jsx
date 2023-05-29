@@ -7,7 +7,7 @@ import './hero.css'
 import "swiper/css/effect-fade";
 import { Autoplay, Pagination, Navigation, Parallax } from "swiper";
 import { useState } from 'react';
-import hero from '../assets/hero.png';     
+import hero from '../assets/hero.webp';
 
 const data = [
     {
