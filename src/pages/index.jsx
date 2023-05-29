@@ -5,6 +5,7 @@ import Hero from '../layout/hero';
 import VideoFrame from '../layout/video';
 import HeroProduct from '../layout/heroProduct';
 import Feedback from '../layout/heroFeedback';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Index() {
     return (

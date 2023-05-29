@@ -3,6 +3,7 @@ import dot from '../assets/dot.svg';
 // import telLogo from '../assets/tel.svg';
 // import classes from '../styles/heroFeedback.module.css';
 import InputComponent from '../components/input';
+import { motion } from 'framer-motion';
 
 // const styles = {
 //     title: {
@@ -82,16 +83,20 @@ const Feedback = () => {
         //     </Box>
         // </Box >
         <Box position='relative' bgcolor={'#F9FAFB'}>
-            <Box
-                component='img'
+            <motion.img
+                initial={{ x: 150, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1, delay: .2 }}
                 src={dot}
-                height={{ xs: '20%', md: '35%' }}
-                position='absolute'
-                right={0}
-                top={0}
-                zIndex={1}
+                style={{ position: 'absolute', right: 0, top: 0 }}
             />
-            <Box component='img' src={dot} height={{ xs: '20%', md: '35%' }} position='absolute' left={0} bottom={0}></Box>
+            <motion.img
+                initial={{ x: -150, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1, delay: .2 }}
+                src={dot}
+                style={{ position: 'absolute', bottom: 0, left: 0 }}
+            />
             <Container maxWidth="lg" sx={{ pt: 10, pb: 20 }}>
                 <Box
                     position='relative'

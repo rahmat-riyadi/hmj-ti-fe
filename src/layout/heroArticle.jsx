@@ -1,6 +1,7 @@
 import { Typography, Box, Grid, Container } from '@mui/material';
 import { useEffect, useState } from 'react';
 import Cards from '../components/card';
+import { motion } from 'framer-motion';
 
 const HeroArticle = () => {
     const [articles, setArticles] = useState([]);
@@ -38,7 +39,7 @@ const HeroArticle = () => {
                     Berita & Informasi
                 </Typography>
                 <Grid container py={5} px={{ xs: 2, sm: 10, md: 14, lg: 18 }} rowSpacing={4} columnSpacing={4} >
-                    {articles?.map(items => {
+                    {articles?.map((items,i) => {
                         return (
                             <Grid
                                 item
@@ -49,7 +50,13 @@ const HeroArticle = () => {
                                 justifyContent='center'
                                 key={items.id}
                             >
-                                <Cards.ArticleCard data={items} />
+                                <motion.div
+                                    initial={{ y: 80, opacity: 0 }}
+                                    whileInView={{ y: 0, opacity: 1 }}
+                                    transition={{ delay: i*0.2, duration: 1 }}
+                                >
+                                    <Cards.ArticleCard data={items} />
+                                </motion.div>
                             </Grid>
                         )
                     })}

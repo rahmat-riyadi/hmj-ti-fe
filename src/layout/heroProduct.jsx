@@ -3,6 +3,7 @@ import { NavLink } from 'react-router-dom';
 import '../styles/heroProduct.css';
 import arrow from '../assets/arrow.svg';
 import { useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
 
 const HeroProduct = () => {
     const [productHighlight, setProductHighlight] = useState([])
@@ -93,10 +94,8 @@ const HeroProduct = () => {
                     >
                         <Stack
                             direction={{ xs: 'column', sm: 'column', md: 'row' }}
-                            // width={{ xs: '80%', md: '96.8%' }}
                             height='100%'
                             gap={4}
-                            // ml={2.8}
                             display='flex'
                             justifyContent='center'
                             margin={'0 auto'}
@@ -106,15 +105,21 @@ const HeroProduct = () => {
                         >
                             {productHighlight?.map(product => {
                                 return (
-                                    <Box
-                                        key={product.id}
-                                        width={{ xs: '12rem', sm: '15rem', md: '10rem', lg: '14em' }}
-                                        height={{ xs: '12rem', sm: '15rem', md: '10rem', lg: '14em' }}
-                                        bgcolor='#fff'
-                                        borderRadius={1}
+                                    <motion.div
+                                        initial={{ x: 100 }}
+                                        whileInView={{ x: 0 }}
+                                        transition={{ duration: 1 }}
                                     >
-                                        Box
-                                    </Box>
+                                        <Box
+                                            key={product.id}
+                                            width={{ xs: '12rem', sm: '15rem', md: '10rem', lg: '14em' }}
+                                            height={{ xs: '12rem', sm: '15rem', md: '10rem', lg: '14em' }}
+                                            bgcolor='#fff'
+                                            borderRadius={1}
+                                        >
+                                            Box
+                                        </Box>
+                                    </motion.div>
                                 )
                             })}
                         </Stack>
