@@ -1,9 +1,12 @@
-import { Box, Typography, Stack, Button, Container, Grid } from '@mui/material';
+import { Box, Typography, Stack, Button, Container, Grid, CircularProgress } from '@mui/material';
 import dot from '../assets/dot.svg';
 // import telLogo from '../assets/tel.svg';
 // import classes from '../styles/heroFeedback.module.css';
 import InputComponent from '../components/input';
 import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import { CheckCircleRounded } from '@mui/icons-material';
 
 // const styles = {
 //     title: {
@@ -17,6 +20,18 @@ import { motion } from 'framer-motion';
 // }
 
 const Feedback = () => {
+
+    onsubmit = (e) => {
+        setLoading(true)
+        e.preventDefault()
+        setTimeout(() => {
+            setLoading(false)
+            toast.error('Pesan berhasil dikirim')
+        }, 800)
+    }
+
+    const [loading, setLoading] = useState(false)
+
     return (
         // <Box
         //     bgcolor='#ffffff'
@@ -113,7 +128,7 @@ const Feedback = () => {
                         <Typography variant='h1' fontWeight={700} color='primary.main' fontSize={{ xs: 21, md: 30 }}>Kirimkan Pesan kepada Kami</Typography>
                         <Typography fontSize={{ xs: 13, md: 14 }}>Kirimkan pesan kepada kami untuk berbagi informasi, permintaan, atau komentar apa pun yang ingin Anda sampaikan. kami dengan senang hati dan akan meresponsnya</Typography>
                     </Stack>
-                    <form action="" method="post">
+                    <form onSubmit={onsubmit} action="" method="post">
                         <Grid container columnSpacing={5} rowSpacing={2} alignItems='center' justifyContent='center'>
                             <Grid item xs={12} md={6}>
                                 <InputComponent id='nama' label='Nama Lengkap' required={true} />
@@ -131,12 +146,27 @@ const Feedback = () => {
                                 <InputComponent id='deskripsi' label='Deskripsi' required={true} multiline={true} />
                             </Grid>
                             <Grid item xs={12} md={12} mt={2}>
-                                <Button variant='contained' sx={{ textTransform: 'capitalize', py: 1 }} fullWidth>Submit</Button>
+                                <Button type='submit' variant='contained' sx={{ textTransform: 'capitalize', height: 43 }} fullWidth >
+                                    {
+                                        loading
+                                        ?
+                                        <CircularProgress
+                                            sx={{ color: '#fff' }}
+                                            size={28}
+                                        />
+                                        :
+                                        'Submit'
+                                    }
+                                </Button>
                             </Grid>
                         </Grid>
                     </form>
                 </Box>
             </Container>
+            <ToastContainer 
+                position='bottom-right' 
+                icon={<CheckCircleRounded sx={{ color: 'green' }} />}
+            />
         </Box>
     );
 }
