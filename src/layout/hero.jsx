@@ -7,32 +7,32 @@ import './hero.css'
 import "swiper/css/effect-fade";
 import { Autoplay, Pagination, Navigation, Parallax } from "swiper";
 import { useState } from 'react';
-// import hero from '../assets/hero.png'      
+import hero from '../assets/hero.png';     
 
 const data = [
     {
         id: 1,
         title: 'Himpunan Mahasiswa Jurusan Teknik Informatika',
         description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam a necessitatibus modi reiciendis eaque! Non qui hic facere voluptates velit!',
-        image: 'https://images.unsplash.com/photo-1528360983277-13d401cdc186?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8amFwYW4lMjBhdCUyMG5pZ2h0fGVufDB8fDB8fA%3D%3D&w=1000&q=80'
+        // image: 'https://images.unsplash.com/photo-1528360983277-13d401cdc186?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8amFwYW4lMjBhdCUyMG5pZ2h0fGVufDB8fDB8fA%3D%3D&w=1000&q=80'
     },
     {
         id: 2,
         title: 'Himpunan Mahasiswa Jurusan Teknik Informatika',
         description: 'Lorem ipsum dolor sit amet consectetur. Velit sagittis quisque suspendisse leo ut metus quis. Risus neque nascetur id in tempus phasellus pretium facilisi in. A metus consequat adipiscing quis vel ipsum. Libero sit vitae habitant auctor. Elit proin lectus arcu eget suspendisse mollis',
-        image: 'https://asset.kompas.com/crop/0x0:777x518/750x500/data/photo/2019/10/17/5da85a643fafc.jpg'
+        // image: 'https://asset.kompas.com/crop/0x0:777x518/750x500/data/photo/2019/10/17/5da85a643fafc.jpg'
     },
     {
         id: 3,
         title: 'Himpunan Mahasiswa Jurusan Teknik Keilmuan',
         description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam a necessitatibus modi reiciendis eaque! Non qui hic facere voluptates velit!',
-        image: 'https://cdn-2.tstatic.net/makassar/foto/bank/images/kampus-uin-alauddin-makassar-8122021.jpg'
+        // image: 'https://cdn-2.tstatic.net/makassar/foto/bank/images/kampus-uin-alauddin-makassar-8122021.jpg'
     },
     {
         id: 4,
         title: 'Himpunan Mahasiswa Jurusan Teknik PWK',
         description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam a necessitatibus modi reiciendis eaque! Non qui hic facere voluptates velit!',
-        image: 'https://cdn-2.tstatic.net/makassar/foto/bank/images/kampus-uin-alauddin-makassar-8122021.jpg'
+        // image: 'https://cdn-2.tstatic.net/makassar/foto/bank/images/kampus-uin-alauddin-makassar-8122021.jpg'
     },
 ]
 
@@ -99,7 +99,8 @@ const Hero = () => {
                     <SwiperSlide key={slide.id}>
                         <Box
                             component='img'
-                            src={slide?.image}
+                            // src={slide?.image}
+                            src={hero}
                             width='100%'
                         />
                     </SwiperSlide>

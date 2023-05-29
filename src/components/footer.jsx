@@ -1,7 +1,7 @@
 import { Box, Button, Divider, Stack, Typography } from '@mui/material'
 import logo from '../assets/logo.svg'
 
-import instagramLogo from '../assets/instagram.svg'
+import instagramLogo from '../assets/footer/ig.svg'
 import whatsappLogo from '../assets/footer/whatsapp.svg'
 import youtubeLogo from '../assets/footer/youtube.svg'
 import tiktokLogo from '../assets/footer/tiktok.svg'
