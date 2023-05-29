@@ -1,7 +1,7 @@
 import { Box, Button, Divider, Stack, Typography } from '@mui/material'
 import logo from '../assets/logo.svg'
 
-import instagramLogo from '../assets/footer/ig.svg'
+import instagramLogo from '../assets/footer/instagram.svg'
 import whatsappLogo from '../assets/footer/whatsapp.svg'
 import youtubeLogo from '../assets/footer/youtube.svg'
 import tiktokLogo from '../assets/footer/tiktok.svg'
@@ -50,7 +50,7 @@ const Footer = () => {
                         color='red'
                     />
                 </a>
-                <a href="https://www.facebook.com/HMJTIUINAM" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/hmjti_uinam/" target="_blank" rel="noopener noreferrer">
                     <Box
                         component='img'
                         src={instagramLogo}
@@ -84,7 +84,7 @@ const Footer = () => {
                 </a>
             </Stack>
             <Stack>
-                <Stack direction={{ xs: 'column', md: 'row' }} gap={10} pt={2} pb={8} justifyContent='center'>
+                <Stack direction={{ xs: 'column', md: 'row' }} gap={{ xs: 2, md: 10 }} pt={2} pb={8} justifyContent='center' alignItems={{ xs: 'left', md: 'center' }}>
                     <Stack direction='row' gap={2} justifyContent='center'>
                         <Box
                             component='img'
@@ -94,7 +94,7 @@ const Footer = () => {
                         />
                         <Box>
                             <Typography fontWeight={400} color='#9A9EA6' fontSize={12}>Telepon</Typography>
-                            <Typography fontWeight={700} color='primary.main' fontSize={14}>hmjti.uinam@gmail.com</Typography>
+                            <Typography fontWeight={700} color='primary.main' fontSize={14}>+62 852 5546 5990</Typography>
                         </Box>
                     </Stack>
                     <Stack direction='row' gap={2} justifyContent='center'>
@@ -106,7 +106,7 @@ const Footer = () => {
                         />
                         <Box>
                             <Typography fontWeight={400} color='#9A9EA6' fontSize={12}>Email</Typography>
-                            <Typography fontWeight={700} color='primary.main' fontSize={14}>hmjti.uinam@gmail.com</Typography>
+                            <Typography fontWeight={700} color='primary.main' fontSize={14}>hmj.ti@uin-alauddin.ac.id</Typography>
                         </Box>
                     </Stack>
                     <Stack direction='row' gap={2} justifyContent='center'>

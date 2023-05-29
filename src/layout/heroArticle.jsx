@@ -1,23 +1,23 @@
 import { Typography, Box, Grid, Container } from '@mui/material';
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 import Cards from '../components/card';
 
 const HeroArticle = () => {
-    const [articles, setArticles] = useState([]);
+    // const [articles, setArticles] = useState([]);
 
-    const getArticles = async () => {
-        try {
-            const res = await fetch('https://jsonplaceholder.typicode.com/photos?_limit=3');
-            const data = await res.json();
-            setArticles(data);
-        } catch (error) {
-            console.log(error);
-        }
-    }
+    // const getArticles = async () => {
+    //     try {
+    //         const res = await fetch('https://jsonplaceholder.typicode.com/photos?_limit=3');
+    //         const data = await res.json();
+    //         setArticles(data);
+    //     } catch (error) {
+    //         console.log(error);
+    //     }
+    // }
 
-    useEffect(() => {
-        getArticles();
-    }, [])
+    // useEffect(() => {
+    //     getArticles();
+    // }, [])
 
     return (
         <Box
@@ -38,7 +38,7 @@ const HeroArticle = () => {
                     Berita & Informasi
                 </Typography>
                 <Grid container py={5} px={{ xs: 2, sm: 10, md: 14, lg: 18 }} rowSpacing={4} columnSpacing={4} >
-                    {articles?.map(items => {
+                    {/* {articles?.map(items => {
                         return (
                             <Grid
                                 item
@@ -52,7 +52,18 @@ const HeroArticle = () => {
                                 <Cards.ArticleCard data={items} />
                             </Grid>
                         )
-                    })}
+                    })} */}
+                    <Grid
+                        item
+                        xs={12}
+                        sm={6}
+                        md={4}
+                        display='flex'
+                        justifyContent='center'
+                    // key={items.id}
+                    >
+                        <Cards.ArticleCard />
+                    </Grid>
                 </Grid>
             </Container >
         </Box>

@@ -42,10 +42,10 @@ const Desc = () => {
                 <Typography
                     fontWeight={500}
                     pt={5}
-                    sx={{ textIndent: 36, WebkitLineClamp: '4', textOverflow: 'ellipsis', display: '-webkit-box', WebkitBoxOrient: 'vertical', overflow: 'hidden' }}
+                    sx={{ textIndent: 36, WebkitLineClamp: '3', textOverflow: 'ellipsis', display: '-webkit-box', WebkitBoxOrient: 'vertical', overflow: 'hidden' }}
                     color='text.main'
                 >
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, assumenda! Sint ipsum excepturi vel atque, accusamus non distinctio dicta necessitatibus aliquid aut eum eveniet voluptatum ab? Aspernatur sunt aliquam cupiditate, quaerat impedit nemo doloribus ipsa. Pariatur animi obcaecati repellat vitae consectetur quibusdam consequuntur, tenetur sed quidem aspernatur officia eveniet. Labore!
+                    Himpunan Mahasiswa Jurusan Teknik Informatika (HMJ-TI) adalah organisasi yang mewakili mahasiswa yang belajar di jurusan Teknik Informatika di Universitas Islam Negeri Alauddin Makassar. HMJ-TI bertujuan untuk mempererat hubungan antara mahasiswa, memfasilitasi kegiatan akademik dan
                 </Typography>
                 <NavLink to='/tentang' style={navStyle}>
                     <Typography fontWeight={600} color='primary.main'>Lihat Selengkapnya</Typography>

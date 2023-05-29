@@ -9,12 +9,13 @@ import imageBorder from '../assets/ekrefCard.png';
 
 import whatsappLogo from '../assets/products/whatsapp.svg';
 import instagramLogo from '../assets/products/instagram.svg';
+import detailPic from '../assets/article/article.png';
 
 
 const ArticleCard = (props) => {
     // const title = props.data.title;
-    const description = props.data.title;
-    const image = props.data.url;
+    // const description = props.data.title;
+    // const image = props.data.url;
 
     return (
         // <Card
@@ -84,7 +85,7 @@ const ArticleCard = (props) => {
         >
             <CardMedia
                 component='img'
-                src={image}
+                src={detailPic}
                 // width='90%'
                 height='44%'
                 sx={{ width: '90%', mx: 'auto', mt: '20px' }}
@@ -102,8 +103,9 @@ const ArticleCard = (props) => {
                     color='text.main'
                     textOverflow='ellipsis'
                 >
-                    Article Satu
+                    {/* Article Satu */}
                     {/* Papan Margin */}
+                    Dirgahayu Jurusan Teknik Informatika ke 19th
                 </Typography>
                 <Typography
                     variant='body2'
@@ -112,7 +114,8 @@ const ArticleCard = (props) => {
                     fontSize={11}
                     pt={1}
                 >
-                    {description}
+                    Perayaan Milad Jurusan Teknik Informatika merupakan saat yang tepat untuk...
+                    {/* {description} */}
                     {/* Senin, 3 Mei 2027 */}
                 </Typography>
             </CardContent>

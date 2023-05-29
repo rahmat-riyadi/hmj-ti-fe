@@ -7,33 +7,40 @@ import './hero.css'
 import "swiper/css/effect-fade";
 import { Autoplay, Pagination, Navigation, Parallax } from "swiper";
 import { useState } from 'react';
-import hero from '../assets/hero.webp';
+import detailPic from '../assets/article/article.png';
+// import hero from '../assets/hero.webp';
 
 const data = [
     {
         id: 1,
-        title: 'Himpunan Mahasiswa Jurusan Teknik Informatika',
-        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam a necessitatibus modi reiciendis eaque! Non qui hic facere voluptates velit!',
+        title: 'Dirgahayu Jurusan Teknik Informatika ke 19th',
+        description: 'Perayaan Milad Jurusan Teknik Informatika merupakan saat yang tepat untuk mengenang awal mula pendirian jurusan ini dan bagaimana sejak saat itu telah berkembang menjadi salah satu jurusan terkemuka dalam bidang teknologi informasi.',
         // image: 'https://images.unsplash.com/photo-1528360983277-13d401cdc186?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8amFwYW4lMjBhdCUyMG5pZ2h0fGVufDB8fDB8fA%3D%3D&w=1000&q=80'
     },
     {
-        id: 2,
-        title: 'Himpunan Mahasiswa Jurusan Teknik Informatika',
-        description: 'Lorem ipsum dolor sit amet consectetur. Velit sagittis quisque suspendisse leo ut metus quis. Risus neque nascetur id in tempus phasellus pretium facilisi in. A metus consequat adipiscing quis vel ipsum. Libero sit vitae habitant auctor. Elit proin lectus arcu eget suspendisse mollis',
-        // image: 'https://asset.kompas.com/crop/0x0:777x518/750x500/data/photo/2019/10/17/5da85a643fafc.jpg'
+        id: 1,
+        title: 'Dirgahayu Jurusan Teknik Informatika ke 19th',
+        description: 'Perayaan Milad Jurusan Teknik Informatika merupakan saat yang tepat untuk mengenang awal mula pendirian jurusan ini dan bagaimana sejak saat itu telah berkembang menjadi salah satu jurusan terkemuka dalam bidang teknologi informasi.',
+        // image: 'https://images.unsplash.com/photo-1528360983277-13d401cdc186?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8amFwYW4lMjBhdCUyMG5pZ2h0fGVufDB8fDB8fA%3D%3D&w=1000&q=80'
     },
-    {
-        id: 3,
-        title: 'Himpunan Mahasiswa Jurusan Teknik Keilmuan',
-        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam a necessitatibus modi reiciendis eaque! Non qui hic facere voluptates velit!',
-        // image: 'https://cdn-2.tstatic.net/makassar/foto/bank/images/kampus-uin-alauddin-makassar-8122021.jpg'
-    },
-    {
-        id: 4,
-        title: 'Himpunan Mahasiswa Jurusan Teknik PWK',
-        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam a necessitatibus modi reiciendis eaque! Non qui hic facere voluptates velit!',
-        // image: 'https://cdn-2.tstatic.net/makassar/foto/bank/images/kampus-uin-alauddin-makassar-8122021.jpg'
-    },
+    // {
+    //     id: 2,
+    //     title: 'Himpunan Mahasiswa Jurusan Teknik Informatika',
+    //     description: 'Lorem ipsum dolor sit amet consectetur. Velit sagittis quisque suspendisse leo ut metus quis. Risus neque nascetur id in tempus phasellus pretium facilisi in. A metus consequat adipiscing quis vel ipsum. Libero sit vitae habitant auctor. Elit proin lectus arcu eget suspendisse mollis',
+    //     // image: 'https://asset.kompas.com/crop/0x0:777x518/750x500/data/photo/2019/10/17/5da85a643fafc.jpg'
+    // },
+    // {
+    //     id: 3,
+    //     title: 'Himpunan Mahasiswa Jurusan Teknik Keilmuan',
+    //     description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam a necessitatibus modi reiciendis eaque! Non qui hic facere voluptates velit!',
+    //     // image: 'https://cdn-2.tstatic.net/makassar/foto/bank/images/kampus-uin-alauddin-makassar-8122021.jpg'
+    // },
+    // {
+    //     id: 4,
+    //     title: 'Himpunan Mahasiswa Jurusan Teknik PWK',
+    //     description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam a necessitatibus modi reiciendis eaque! Non qui hic facere voluptates velit!',
+    //     // image: 'https://cdn-2.tstatic.net/makassar/foto/bank/images/kampus-uin-alauddin-makassar-8122021.jpg'
+    // },
 ]
 
 const Hero = () => {
@@ -83,10 +90,10 @@ const Hero = () => {
                 centeredSlides={true}
                 loop={true}
                 parallax={true}
-                // autoplay={{
-                //     delay: 500,
-                //     disableOnInteraction: false,
-                // }}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
                 pagination={{
                     clickable: true,
                     el: '.pagination',
@@ -100,7 +107,7 @@ const Hero = () => {
                         <Box
                             component='img'
                             // src={slide?.image}
-                            src={hero}
+                            src={detailPic}
                             width='100%'
                         />
                     </SwiperSlide>

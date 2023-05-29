@@ -1,25 +1,25 @@
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 import { Box, Typography, Grid } from '@mui/material';
 import Cards from '../components/card';
 import patternTop from '../assets/patternTop.png';
 import patternBottom from '../assets/patternBottom.png';
 
 const Berita = () => {
-    const [articles, setArticles] = useState([]);
+    // const [articles, setArticles] = useState([]);
 
-    const getArticles = async () => {
-        try {
-            const res = await fetch('https://jsonplaceholder.typicode.com/photos?_limit=4');
-            const data = await res.json();
-            setArticles(data);
-        } catch (error) {
-            console.log(error);
-        }
-    }
+    // const getArticles = async () => {
+    //     try {
+    //         const res = await fetch('https://jsonplaceholder.typicode.com/photos?_limit=4');
+    //         const data = await res.json();
+    //         setArticles(data);
+    //     } catch (error) {
+    //         console.log(error);
+    //     }
+    // }
 
-    useEffect(() => {
-        getArticles();
-    }, [])
+    // useEffect(() => {
+    //     getArticles();
+    // }, [])
 
     return (
         <>
@@ -68,7 +68,7 @@ const Berita = () => {
                     spacing={3}
                     justifyContent='center'
                 >
-                    {articles?.map(items => {
+                    {/* {articles?.map(items => {
                         return (
                             <Grid
                                 item
@@ -82,7 +82,10 @@ const Berita = () => {
                                 <Cards.ArticleCard data={items} />
                             </Grid>
                         )
-                    })}
+                    })} */}
+                    <Grid item>
+                        <Cards.ArticleCard />
+                    </Grid>
                 </Grid>
             </Box>
         </>

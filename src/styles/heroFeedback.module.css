@@ -13,8 +13,8 @@
     line-height: 60%;
 }
 
-.css-wgai2y-MuiFormLabel-asterisk {
-    color: red !important;
+.MuiFormLabel-asterisk {
+    color: rgb(144, 8, 8) !important;
 }
 
 @media only screen and (max-width: 600px) {

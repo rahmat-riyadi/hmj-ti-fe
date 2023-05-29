@@ -2,32 +2,35 @@ import { Box, Stack, Typography } from '@mui/material';
 import { NavLink } from 'react-router-dom';
 import '../styles/heroProduct.css';
 import arrow from '../assets/arrow.svg';
-import { useEffect, useState } from 'react';
+import produk1 from '../assets/produk/produk1.webp';
+import produk2 from '../assets/produk/produk2.webp';
+// import { useEffect, useState } from 'react';
 
 const HeroProduct = () => {
-    const [productHighlight, setProductHighlight] = useState([])
+    // const [productHighlight, setProductHighlight] = useState([])
 
-    const getProductHighlight = async () => {
-        try {
-            const res = await fetch('https://jsonplaceholder.typicode.com/photos?_limit=2');
-            const data = await res.json();
-            setProductHighlight(data);
-        } catch (error) {
-            console.log(error);
-        }
-    }
+    // const getProductHighlight = async () => {
+    //     try {
+    //         const res = await fetch('https://jsonplaceholder.typicode.com/photos?_limit=2');
+    //         const data = await res.json();
+    //         setProductHighlight(data);
+    //     } catch (error) {
+    //         console.log(error);
+    //     }
+    // }
 
-    useEffect(() => {
-        getProductHighlight();
-    }, [])
+    // useEffect(() => {
+    //     getProductHighlight();
+    // }, [])
 
     return (
         <Box
             position='relative'
             width='100%'
             bgcolor='#BA1F1A'
-            height={{ xs: '100vh', md: '60.5vh' }}
-            maxHeight={false}
+            // height={{ xs: '105vh', md: '60.5vh' }}
+            // maxHeight={false}
+            py={2}
             mb={{ xs: -1 }}
             color='#fff'
             overflow='hidden'
@@ -35,14 +38,14 @@ const HeroProduct = () => {
             <Stack
                 direction={{ xs: 'column', md: 'row' }}
                 className='container'
-                height='100%'
                 justifyContent='center'
                 alignItems='center'
+                py={12}
                 gap={{ xs: 0, md: 2.4 }}
             >
                 <Stack
                     width={{ xs: '90%', md: '18.3%' }}
-                    height='50%'
+                    // height={'50%'}
                     zIndex={1}
                     justifyContent='center'
                 >
@@ -73,17 +76,15 @@ const HeroProduct = () => {
                 </Stack>
                 <Stack
                     width={{ xs: '80%', md: '50%' }}
-                    height='100%'
                     zIndex={1}
                     justifyContent='center'
                     alignItems='center'
                 >
                     <Box
-                        marginTop={{ xs: 0, md: 4 }}
+                        marginTop={{ xs: 12, md: 4 }}
                         marginLeft={{ xs: 0, md: 5.75 }}
                         borderRadius={1}
-                        // width='100%'
-                        height={{ xs: '100%', md: '60%' }}
+                        height={{ xs: '50vh', md: '35vh' }}
                         zIndex={0}
                         position='relative'
                         display='flex'
@@ -104,19 +105,30 @@ const HeroProduct = () => {
                             alignItems='center'
                             bottom={48}
                         >
-                            {productHighlight?.map(product => {
-                                return (
-                                    <Box
-                                        key={product.id}
-                                        width={{ xs: '12rem', sm: '15rem', md: '10rem', lg: '14em' }}
-                                        height={{ xs: '12rem', sm: '15rem', md: '10rem', lg: '14em' }}
-                                        bgcolor='#fff'
-                                        borderRadius={1}
-                                    >
-                                        Box
-                                    </Box>
-                                )
-                            })}
+                            {/* {productHighlight?.map(product => {
+                                return ( */}
+                            <Box
+                                // key={product.id}
+                                width={{ xs: '12rem', sm: '15rem', md: '10rem', lg: '14em' }}
+                                height={{ xs: '12rem', sm: '15rem', md: '10rem', lg: '14em' }}
+                                bgcolor='#fff'
+                                borderRadius={1}
+                                component='img'
+                                src={produk1}
+                            >
+                            </Box>
+                            <Box
+                                // key={product.id}
+                                width={{ xs: '12rem', sm: '15rem', md: '10rem', lg: '14em' }}
+                                height={{ xs: '12rem', sm: '15rem', md: '10rem', lg: '14em' }}
+                                bgcolor='#fff'
+                                borderRadius={1}
+                                component='img'
+                                src={produk2}
+                            >
+                            </Box>
+                            {/* )
+                            })} */}
                         </Stack>
                     </Box>
                     <NavLink to='/ekonomi-kreatif' className='link-mobile'>

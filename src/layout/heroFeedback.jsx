@@ -105,8 +105,8 @@ const Feedback = () => {
                     zIndex={99}
                 >
                     <Stack mb={7} gap={2} width={{ xs: '100%', md: '75%' }}>
-                        <Typography variant='h1' fontWeight={700} color='primary.main' fontSize={{ xs: 21, md: 30 }}>Kirimkan Pesan kepada Kami</Typography>
-                        <Typography fontSize={{ xs: 13, md: 14 }}>Kirimkan pesan kepada kami untuk berbagi informasi, permintaan, atau komentar apa pun yang ingin Anda sampaikan. kami dengan senang hati dan akan meresponsnya</Typography>
+                        <Typography variant='h1' fontWeight={700} className='heading' color='primary.main' fontSize={{ xs: 21, md: 30 }}>Kirimkan Pesan kepada Kami</Typography>
+                        <Typography fontSize={{ xs: 13, md: 14 }} pt={4}>Kirimkan pesan kepada kami untuk berbagi informasi, permintaan, atau komentar apa pun yang ingin Anda sampaikan. kami dengan senang hati dan akan meresponsnya</Typography>
                     </Stack>
                     <form action="" method="post">
                         <Grid container columnSpacing={5} rowSpacing={2} alignItems='center' justifyContent='center'>
@@ -123,7 +123,7 @@ const Feedback = () => {
                                 <InputComponent id='instansi' label='Instansi' />
                             </Grid>
                             <Grid item xs={12} md={12}>
-                                <InputComponent id='deskripsi' label='Deskripsi' required={true} multiline={true} />
+                                <InputComponent id='deskripsi' label='Deskripsi' required={true} multiline={true} sx={{ '.MuiFormLabel-asterisk': { color: 'primary.main' } }} />
                             </Grid>
                             <Grid item xs={12} md={12} mt={2}>
                                 <Button variant='contained' sx={{ textTransform: 'capitalize', py: 1 }} fullWidth>Submit</Button>
