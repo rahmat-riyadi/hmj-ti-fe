@@ -6,8 +6,10 @@ const Profile = ({ img }) => {
             <Box className='photo-containers'>
                 <Box component='img' src={img} width='175px' />
             </Box>
-            <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>M. Thariq Ramadhan</Typography>
-            <Typography color='primary.main' fontSize='0.7rem' fontWeight={700}>Ketua Umum</Typography>
+            <Box width='200px'>
+                <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>M. Thariq Ramadhan</Typography>
+                <Typography color='primary.main' fontSize='0.7rem' fontWeight={700}>Ketua Umum</Typography>
+            </Box>
         </Box>
     );
 }
