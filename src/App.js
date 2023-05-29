@@ -10,6 +10,7 @@ import Tentang from './pages/tentang';
 import ProtectedRoute from './utils/protectedRoute';
 import ArticleDetail from './pages/article-detail';
 import ScrollToTop from './utils/scrollToTop';
+import BtnScrollTop from './utils/btnScrollToTop';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path='ekonomi-kreatif' element={<Ekref />} />
         </Route>
       </Routes>
+      <BtnScrollTop />
       <ScrollToTop />
     </div>
   );

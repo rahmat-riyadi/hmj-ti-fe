@@ -33,13 +33,27 @@ const Berita = () => {
                 textAlign='center'
                 position='relative'
             >
-                <Box component='img' src={patternTop} position='absolute' left={0} height='100%' />
-                <Box component='img' src={patternBottom} position='absolute' right={0} height='100%' />
+                <Box
+                    component='img'
+                    src={patternTop}
+                    position='absolute'
+                    left={{ xs: -200, md: -100 }}
+                    top={0}
+                    height='100%'
+                />
+                <Box
+                    component='img'
+                    src={patternBottom}
+                    position='absolute'
+                    right={{ xs: -200, md: -100 }}
+                    bottom={0}
+                    height='100%'
+                />
                 <Typography
                     position='absolute'
                     color='#fff'
                     fontWeight={600}
-                    fontSize='3rem'
+                    fontSize={{ xs: '2rem', md: '3rem' }}
                 >
                     Berita & Kegiatan
                 </Typography>
