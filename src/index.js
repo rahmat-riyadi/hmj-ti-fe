@@ -25,6 +25,13 @@ const theme = createTheme({
       secondary: '#454F5B',
       gray: '#9A9EA6'
     }
+  },
+  overrides: {
+    MuiFormLabel: {
+      asterisk: {
+        color: "red",
+      }
+    }
   }
 })
 

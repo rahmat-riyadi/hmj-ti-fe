@@ -7,9 +7,22 @@ const ArticleDetail = () => {
     // const { id } = useParams()
 
     return (
-        <Box py={4} display='flex' alignItems='center' flexDirection='column' bgcolor='#F9FAFB'>
+        <Box
+            py={4}
+            display='flex'
+            alignItems='center'
+            flexDirection='column'
+            bgcolor='#F9FAFB'
+        >
             <Box textAlign='justify' width={{ xs: '85%', md: '69.5%' }}>
-                <Typography pb={2} fontWeight={700} fontSize={{ xs: 20, md: 28 }} textAlign='center'>Rapat Kerja HMJ-TI Periode 2023-2024</Typography>
+                <Typography
+                    pb={2}
+                    fontWeight={700}
+                    fontSize={{ xs: 20, md: 28 }}
+                    textAlign='center'
+                >
+                    Rapat Kerja HMJ-TI Periode 2023-2024
+                </Typography>
                 <Box component='img' src={detailPic} width='100%' />
                 <Typography fontWeight={300} sx={{ opacity: 0.57 }} py={2} fontStyle='italic'>Dipublikasikan pada 17-November-2023</Typography>
                 <Typography>Lorem ipsum dolor sit amet consectetur. Proin tortor risus tristique at viverra adipiscing sed ipsum neque. Quis gravida augue maecenas lectus amet sagittis sit lacus. Sit feugiat lacus maecenas a lorem arcu enim vitae. Nisl elit lectus in phasellus adipiscing amet quis sit eget. Aliquet cras semper sit diam elit viverra viverra eleifend adipiscing. Sed pretium ut mollis vestibulum. Massa tempus turpis nulla ut. Ornare et malesuada elit in feugiat mauris nulla. Vel pharetra enim adipiscing laoreet elit cras sit. Sed venenatis consequat elit velit at duis. Rhoncus a donec volutpat quam est nulla. Diam sapien orci sit mauris ornare magnis. Nec venenatis nibh nulla blandit sapien in nisl. Eget vitae feugiat sagittis enim aenean libero.

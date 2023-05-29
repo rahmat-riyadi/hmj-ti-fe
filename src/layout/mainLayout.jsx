@@ -4,10 +4,14 @@ import Navbar from "../components/navbar";
 import Footer from '../components/footer';
 
 export default function MainLayout() {
+    // const scrollDirection = useScrollDirection();
+
     return (
         <Box>
-            <Navbar />
-            <Box mt={10}>
+            <Box sx={{ mb: '80px' }}>
+                <Navbar />
+            </Box>
+            <Box>
                 <Outlet />
             </Box>
             <Footer />

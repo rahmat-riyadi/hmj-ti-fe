@@ -25,25 +25,24 @@ const Ekref = () => {
                     component='img'
                     src={patternTop}
                     position='absolute'
-                    left={0}
+                    left={{ xs: -200, md: -100 }}
                     top={0}
-                    height={{ xs: '50%', md: '100%' }}
-                    marginLeft={-10}
+                    height='100%'
+                // marginLeft={-10}
                 />
                 <Box
                     component='img'
                     src={patternBottom}
                     position='absolute'
-                    right={0}
+                    right={{ xs: -200, md: -100 }}
                     bottom={0}
-                    height={{ xs: '50%', md: '100%' }}
-                    marginRight={-10}
+                    height='100%'
                 />
                 <Box
                     ml={0}
                     color='#fff'
                 >
-                    <Typography fontWeight={600} fontSize='3rem'>Ekonomi Kreatif</Typography>
+                    <Typography fontWeight={600} fontSize={{ xs: '2rem', md: '2rem' }} zIndex={9} position='relative'>Ekonomi Kreatif</Typography>
                     <Typography
                         fontSize='1rem'
                         fontWeight={300}
@@ -76,12 +75,12 @@ const Ekref = () => {
                 <Cards.ProductCard />
             </Box> */}
 
-            <Container maxWidth="xl" sx={{ py: 9, bgcolor:'#F9FAFB' }}>
-                <Grid container spacing={3} justifyContent='center'>
+            <Container maxWidth="xl" sx={{ py: 9, bgcolor: '#F9FAFB' }}>
+                <Grid container spacing={3}>
                     {
                         [1, 1, 1, 1, 1].map(e => {
                             return (
-                                <Grid item>
+                                <Grid item xs={12} sm={12} md={6} justifyContent='center' display='flex'>
                                     <Cards.ProductCard />
                                 </Grid>
                             )

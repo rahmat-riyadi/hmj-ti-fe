@@ -13,6 +13,10 @@
     line-height: 60%;
 }
 
+.css-wgai2y-MuiFormLabel-asterisk {
+    color: red !important;
+}
+
 @media only screen and (max-width: 600px) {
     .container::after {
         font-size: 96px;
