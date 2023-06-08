@@ -6,38 +6,38 @@ import '../styles/about.css';
 import dot from '../assets/dot.svg';
 // import Profile from '../components/profile';
 
-import aca from '../assets/pengurus/aca.png';
-import aidil from '../assets/pengurus/aidil.png';
-import anca from '../assets/pengurus/anca.png';
-import anhar from '../assets/pengurus/anhar.png';
-import cimol from '../assets/pengurus/cimol.png';
-import dani from '../assets/pengurus/dani.png';
-import darma from '../assets/pengurus/darma.png';
-import daus from '../assets/pengurus/daus.png';
-import fuji from '../assets/pengurus/fuji.png';
-import gardi from '../assets/pengurus/gardi.png';
-import gilang from '../assets/pengurus/gilang.png';
-import haris from '../assets/pengurus/haris.png';
-import idar from '../assets/pengurus/idar.png';
-import khildan from '../assets/pengurus/khildan.png';
-import lebu from '../assets/pengurus/lebu.png';
-import madhan from '../assets/pengurus/madhan.png';
-import maruf from '../assets/pengurus/maruf.png';
-import musda from '../assets/pengurus/musda.png';
-import panjul from '../assets/pengurus/panjul.png';
-import qunio from '../assets/pengurus/qunio.png';
-import rere from '../assets/pengurus/rere.png';
-import thoriq from '../assets/pengurus/thoriq.png';
-import uki from '../assets/pengurus/uki.png';
-import zaim from '../assets/pengurus/zaim.png';
-import gaza from '../assets/pengurus/gaza.png';
-import faisal from '../assets/pengurus/faisal.png';
-import rian from '../assets/pengurus/rian.png';
-import luthfi from '../assets/pengurus/luthfi.png';
-import nuha from '../assets/pengurus/nuha.png';
+import aca from '../assets/pengurus/aca.webp';
+import aidil from '../assets/pengurus/aidil.webp';
+import anca from '../assets/pengurus/anca.webp';
+import anhar from '../assets/pengurus/anhar.webp';
+import cimol from '../assets/pengurus/cimol.webp';
+import dani from '../assets/pengurus/dani.webp';
+import darma from '../assets/pengurus/darma.webp';
+import daus from '../assets/pengurus/daus.webp';
+import fuji from '../assets/pengurus/fuji.webp';
+import gardi from '../assets/pengurus/gardi.webp';
+import gilang from '../assets/pengurus/gilang.webp';
+import haris from '../assets/pengurus/haris.webp';
+import idar from '../assets/pengurus/idar.webp';
+import khildan from '../assets/pengurus/khildan.webp';
+import lebu from '../assets/pengurus/lebu.webp';
+import madhan from '../assets/pengurus/madhan.webp';
+import maruf from '../assets/pengurus/maruf.webp';
+import musda from '../assets/pengurus/musda.webp';
+import panjul from '../assets/pengurus/panjul.webp';
+import qunio from '../assets/pengurus/qunio.webp';
+import rere from '../assets/pengurus/rere.webp';
+import thoriq from '../assets/pengurus/thoriq.webp';
+import uki from '../assets/pengurus/uki.webp';
+import zaim from '../assets/pengurus/zaim.webp';
+import gaza from '../assets/pengurus/gaza.webp';
+import faisal from '../assets/pengurus/faisal.webp';
+import rian from '../assets/pengurus/rian.webp';
+import luthfi from '../assets/pengurus/luthfi.webp';
+import nuha from '../assets/pengurus/nuha.webp';
 
-import a1 from '../assets/1.jpg';
-import a2 from '../assets/2.jpg';
+import a1 from '../assets/1.webp';
+import a2 from '../assets/2.webp';
 
 const Tentang = () => {
 
@@ -96,6 +96,7 @@ const Tentang = () => {
             <Box sx={{ bgcolor: '#F9FAFB' }}>
                 <Box position='relative'>
                     <Box
+                        loading='lazy'
                         component='img' src={dot}
                         position='absolute'
                         width={{ xs: '20%', md: '10%' }}
@@ -104,6 +105,7 @@ const Tentang = () => {
                         zIndex={2}
                     />
                     <Box
+                        loading='lazy'
                         component='img' src={dot}
                         position='absolute'
                         width={{ xs: '20%', md: '10%' }}
@@ -112,6 +114,7 @@ const Tentang = () => {
                         zIndex={2}
                     />
                     <Box
+                        loading='lazy'
                         component='img' src={dot}
                         position='absolute'
                         width={{ xs: '20%', md: '10%' }}
@@ -120,6 +123,7 @@ const Tentang = () => {
                         zIndex={2}
                     />
                     <Box
+                        loading='lazy'
                         component='img' src={dot}
                         position='absolute'
                         width={{ xs: '20%', md: '10%' }}
@@ -128,6 +132,7 @@ const Tentang = () => {
                         zIndex={2}
                     />
                     <Box
+                        loading='lazy'
                         component='img' src={dot}
                         position='absolute'
                         width={{ xs: '20%', md: '10%' }}
@@ -136,6 +141,7 @@ const Tentang = () => {
                         zIndex={2}
                     />
                     <Box
+                        loading='lazy'
                         component='img' src={dot}
                         position='absolute'
                         width={{ xs: '20%', md: '10%' }}
@@ -144,6 +150,7 @@ const Tentang = () => {
                         zIndex={2}
                     />
                     <Box
+                        loading='lazy'
                         component='img' src={dot}
                         position='absolute'
                         width={{ xs: '20%', md: '10%' }}
@@ -152,6 +159,7 @@ const Tentang = () => {
                         zIndex={2}
                     />
                     <Box
+                        loading='lazy'
                         component='img' src={dot}
                         position='absolute'
                         width={{ xs: '20%', md: '10%' }}
@@ -171,8 +179,9 @@ const Tentang = () => {
                                 flexDirection='column'
                                 display='flex'
                             >
-                                <Box className='photo-container' marginLeft={{ xs: 9, sm: 13 }}>
+                                <Box className='photo-container'>
                                     <Box
+                                        loading='lazy'
                                         component='img'
                                         src={a1}
                                         width='75%'
@@ -229,8 +238,9 @@ const Tentang = () => {
                                 flexDirection='column'
                                 display='flex'
                             >
-                                <Box className='photo-containerr' ml={{ xs: 9, sm: 13 }}>
+                                <Box className='photo-containerr'>
                                     <Box
+                                        loading='lazy'
                                         component='img'
                                         src={a2}
                                         width='75%'
@@ -261,10 +271,10 @@ const Tentang = () => {
                                     <Grid item md={3} xs={12} ml={3}>
                                         <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                             <Box className='photo-containers'>
-                                                <Box component='img' src={thoriq} width='175px' />
+                                                <Box loading='lazy' component='img' src={thoriq} width='175px' />
                                             </Box>
                                             <Box width='200px'>
-                                                <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>M. Thariq Ramadhan</Typography>
+                                                <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Thariq Putra Aulia Rahmadhana</Typography>
                                                 <Typography color='primary.main' fontSize='0.7rem' fontWeight={700}>Ketua Umum</Typography>
                                             </Box>
                                         </Box>
@@ -272,7 +282,7 @@ const Tentang = () => {
                                     <Grid item md={3} xs={12} ml={3}>
                                         <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                             <Box className='photo-containers'>
-                                                <Box component='img' src={daus} width='175px' />
+                                                <Box loading='lazy' component='img' src={daus} width='175px' />
                                             </Box>
                                             <Box width='200px'>
                                                 <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Muh. Firdaus</Typography>
@@ -283,7 +293,7 @@ const Tentang = () => {
                                     <Grid item md={3} xs={12} ml={3}>
                                         <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                             <Box className='photo-containers'>
-                                                <Box component='img' src={darma} width='175px' />
+                                                <Box loading='lazy' component='img' src={darma} width='175px' />
                                             </Box>
                                             <Box width='200px'>
                                                 <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Darmawati</Typography>
@@ -294,7 +304,7 @@ const Tentang = () => {
                                     <Grid item md={3} xs={12} ml={3}>
                                         <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                             <Box className='photo-containers'>
-                                                <Box component='img' src={fuji} width='175px' />
+                                                <Box loading='lazy' component='img' src={fuji} width='175px' />
                                             </Box>
                                             <Box width='200px'>
                                                 <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Syarifah Fujina Azzahra</Typography>
@@ -305,7 +315,7 @@ const Tentang = () => {
                                     <Grid item md={3} xs={12} ml={3}>
                                         <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                             <Box className='photo-containers'>
-                                                <Box component='img' src={nuha} width='175px' />
+                                                <Box loading='lazy' component='img' src={nuha} width='175px' />
                                             </Box>
                                             <Box width='200px'>
                                                 <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Nurul Hasanatunnisa</Typography>
@@ -326,7 +336,7 @@ const Tentang = () => {
                                 <Grid item xs={6} md={2}>
                                     <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                         <Box className='photo-containers'>
-                                            <Box component='img' src={madhan} width='175px' />
+                                            <Box loading='lazy' component='img' src={madhan} width='175px' />
                                         </Box>
                                         <Box width='200px'>
                                             <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Rahmat Ramadhan</Typography>
@@ -376,29 +386,29 @@ const Tentang = () => {
                                             <Grid item md={3} xs={12} ml={3}>
                                                 <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                                     <Box className='photo-containers'>
-                                                        <Box component='img' src={gaza} width='175px' />
+                                                        <Box loading='lazy' component='img' src={gaza} width='175px' />
                                                     </Box>
                                                     <Box width='200px'>
                                                         <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Muh Al-Gazali</Typography>
-                                                        <Typography color='primary.main' fontSize='0.7rem' fontWeight={700}>Ketua Umum</Typography>
+                                                        <Typography color='primary.main' fontSize='0.7rem' fontWeight={700}>Ketua Bidang</Typography>
                                                     </Box>
                                                 </Box>
                                             </Grid>
                                             <Grid item md={3} xs={12} ml={3}>
                                                 <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                                     <Box className='photo-containers'>
-                                                        <Box component='img' src={panjul} width='175px' />
+                                                        <Box loading='lazy' component='img' src={panjul} width='175px' />
                                                     </Box>
                                                     <Box width='200px'>
                                                         <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Azizul</Typography>
-                                                        <Typography color='primary.main' fontSize='0.7rem' fontWeight={700}>Ketua Umum</Typography>
+                                                        <Typography color='primary.main' fontSize='0.7rem' fontWeight={700}>Wakil Ketua Bidang</Typography>
                                                     </Box>
                                                 </Box>
                                             </Grid>
                                             <Grid item md={3} xs={12} ml={3}>
                                                 <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                                     <Box className='photo-containers'>
-                                                        <Box component='img' src={khildan} width='175px' />
+                                                        <Box loading='lazy' component='img' src={khildan} width='175px' />
                                                     </Box>
                                                     <Box width='200px'>
                                                         <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Ahmad Khildan Ramadani</Typography>
@@ -409,7 +419,7 @@ const Tentang = () => {
                                             <Grid item md={3} xs={12} ml={3}>
                                                 <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                                     <Box className='photo-containers'>
-                                                        <Box component='img' src={gardi} width='175px' />
+                                                        <Box loading='lazy' component='img' src={gardi} width='175px' />
                                                     </Box>
                                                     <Box width='200px'>
                                                         <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Ahmadi Gardi</Typography>
@@ -453,7 +463,7 @@ const Tentang = () => {
                                             <Grid item md={3} xs={12} ml={3}>
                                                 <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                                     <Box className='photo-containers'>
-                                                        <Box component='img' src={aidil} width='175px' />
+                                                        <Box loading='lazy' component='img' src={aidil} width='175px' />
                                                     </Box>
                                                     <Box width='200px'>
                                                         <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Aidil Ashyari Umar</Typography>
@@ -464,7 +474,7 @@ const Tentang = () => {
                                             <Grid item md={3} xs={12} ml={3}>
                                                 <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                                     <Box className='photo-containers'>
-                                                        <Box component='img' src={anhar} width='175px' />
+                                                        <Box loading='lazy' component='img' src={anhar} width='175px' />
                                                     </Box>
                                                     <Box width='200px'>
                                                         <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Muhammad Rifky Zauki</Typography>
@@ -475,7 +485,7 @@ const Tentang = () => {
                                             <Grid item md={3} xs={12} ml={3}>
                                                 <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                                     <Box className='photo-containers'>
-                                                        <Box component='img' src={zaim} width='175px' />
+                                                        <Box loading='lazy' component='img' src={zaim} width='175px' />
                                                     </Box>
                                                     <Box width='200px'>
                                                         <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Za’im Fathurrahman Ilham</Typography>
@@ -520,7 +530,7 @@ const Tentang = () => {
                                             <Grid item md={3} xs={12} ml={3}>
                                                 <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                                     <Box className='photo-containers'>
-                                                        <Box component='img' src={rian} width='175px' />
+                                                        <Box loading='lazy' component='img' src={rian} width='175px' />
                                                     </Box>
                                                     <Box width='200px'>
                                                         <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Muh. Rian</Typography>
@@ -531,7 +541,7 @@ const Tentang = () => {
                                             <Grid item md={3} xs={12} ml={3}>
                                                 <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                                     <Box className='photo-containers'>
-                                                        <Box component='img' src={idar} width='175px' />
+                                                        <Box loading='lazy' component='img' src={idar} width='175px' />
                                                     </Box>
                                                     <Box width='200px'>
                                                         <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Andi Muhdar Abdi Salfah</Typography>
@@ -542,7 +552,7 @@ const Tentang = () => {
                                             <Grid item md={3} xs={12} ml={3}>
                                                 <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                                     <Box className='photo-containers'>
-                                                        <Box component='img' src={aca} width='175px' />
+                                                        <Box loading='lazy' component='img' src={aca} width='175px' />
                                                     </Box>
                                                     <Box width='200px'>
                                                         <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Aqilah Zahra</Typography>
@@ -553,7 +563,7 @@ const Tentang = () => {
                                             <Grid item md={3} xs={12} ml={3}>
                                                 <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                                     <Box className='photo-containers'>
-                                                        <Box component='img' src={gilang} width='175px' />
+                                                        <Box loading='lazy' component='img' src={gilang} width='175px' />
                                                     </Box>
                                                     <Box width='200px'>
                                                         <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Muh Gilang Sayu</Typography>
@@ -581,7 +591,7 @@ const Tentang = () => {
                                     {/* <Profile img={img} /> */}
                                     <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                         <Box className='photo-containers'>
-                                            <Box component='img' src={anca} width='175px' />
+                                            <Box loading='lazy' component='img' src={anca} width='175px' />
                                         </Box>
                                         <Box width='200px'>
                                             <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Muh. Gufransah Jamaluddin</Typography>
@@ -631,44 +641,44 @@ const Tentang = () => {
                                             <Grid item md={3} xs={12} ml={3}>
                                                 <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                                     <Box className='photo-containers'>
-                                                        <Box component='img' src={cimol} width='175px' />
+                                                        <Box loading='lazy' component='img' src={cimol} width='175px' />
                                                     </Box>
                                                     <Box width='200px'>
                                                         <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Nurul Khusnul Khotimah</Typography>
-                                                        <Typography color='primary.main' fontSize='0.7rem' fontWeight={700}>Ketua Umum</Typography>
+                                                        <Typography color='primary.main' fontSize='0.7rem' fontWeight={700}>Ketua Bidang</Typography>
                                                     </Box>
                                                 </Box>
                                             </Grid>
                                             <Grid item md={3} xs={12} ml={3}>
                                                 <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                                     <Box className='photo-containers'>
-                                                        <Box component='img' src={luthfi} width='175px' />
+                                                        <Box loading='lazy' component='img' src={luthfi} width='175px' />
                                                     </Box>
                                                     <Box width='200px'>
                                                         <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Muh. Luthfi Mubarak</Typography>
-                                                        <Typography color='primary.main' fontSize='0.7rem' fontWeight={700}>Ketua Umum</Typography>
+                                                        <Typography color='primary.main' fontSize='0.7rem' fontWeight={700}>Wakil Ketua Bidang</Typography>
                                                     </Box>
                                                 </Box>
                                             </Grid>
                                             <Grid item md={3} xs={12} ml={3}>
                                                 <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                                     <Box className='photo-containers'>
-                                                        <Box component='img' src={musda} width='175px' />
+                                                        <Box loading='lazy' component='img' src={musda} width='175px' />
                                                     </Box>
                                                     <Box width='200px'>
                                                         <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Musdalifah</Typography>
-                                                        <Typography color='primary.main' fontSize='0.7rem' fontWeight={700}>Ketua Umum</Typography>
+                                                        <Typography color='primary.main' fontSize='0.7rem' fontWeight={700}>Anggota</Typography>
                                                     </Box>
                                                 </Box>
                                             </Grid>
                                             <Grid item md={3} xs={12} ml={3}>
                                                 <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                                     <Box className='photo-containers'>
-                                                        <Box component='img' src={qunio} width='175px' />
+                                                        <Box loading='lazy' component='img' src={qunio} width='175px' />
                                                     </Box>
                                                     <Box width='200px'>
                                                         <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Hidayat Saleh</Typography>
-                                                        <Typography color='primary.main' fontSize='0.7rem' fontWeight={700}>Ketua Umum</Typography>
+                                                        <Typography color='primary.main' fontSize='0.7rem' fontWeight={700}>Anggota</Typography>
                                                     </Box>
                                                 </Box>
                                             </Grid>
@@ -708,7 +718,7 @@ const Tentang = () => {
                                             <Grid item md={3} xs={12} ml={3}>
                                                 <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                                     <Box className='photo-containers'>
-                                                        <Box component='img' src={lebu} width='175px' />
+                                                        <Box loading='lazy' component='img' src={lebu} width='175px' />
                                                     </Box>
                                                     <Box width='200px'>
                                                         <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Muh. Alif Afwan</Typography>
@@ -719,7 +729,7 @@ const Tentang = () => {
                                             <Grid item md={3} xs={12} ml={3}>
                                                 <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                                     <Box className='photo-containers'>
-                                                        <Box component='img' src={faisal} width='175px' />
+                                                        <Box loading='lazy' component='img' src={faisal} width='175px' />
                                                     </Box>
                                                     <Box width='200px'>
                                                         <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Muhammad Faisal Iskandar</Typography>
@@ -730,7 +740,7 @@ const Tentang = () => {
                                             <Grid item md={3} xs={12} ml={3}>
                                                 <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                                     <Box className='photo-containers'>
-                                                        <Box component='img' src={dani} width='175px' />
+                                                        <Box loading='lazy' component='img' src={dani} width='175px' />
                                                     </Box>
                                                     <Box width='200px'>
                                                         <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Nurramadani</Typography>
@@ -741,7 +751,7 @@ const Tentang = () => {
                                             <Grid item md={3} xs={12} ml={3}>
                                                 <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                                     <Box className='photo-containers'>
-                                                        <Box component='img' src={haris} width='175px' />
+                                                        <Box loading='lazy' component='img' src={haris} width='175px' />
                                                     </Box>
                                                     <Box width='200px'>
                                                         <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Muh. Abdul Haris</Typography>
@@ -785,29 +795,29 @@ const Tentang = () => {
                                             <Grid item md={3} xs={12} ml={3}>
                                                 <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                                     <Box className='photo-containers'>
-                                                        <Box component='img' src={maruf} width='175px' />
+                                                        <Box loading='lazy' component='img' src={maruf} width='175px' />
                                                     </Box>
                                                     <Box width='200px'>
                                                         <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>M. Maruf Amiruddin</Typography>
-                                                        <Typography color='primary.main' fontSize='0.7rem' fontWeight={700}>Ketua bidang</Typography>
+                                                        <Typography color='primary.main' fontSize='0.7rem' fontWeight={700}>Ketua Bidang</Typography>
                                                     </Box>
                                                 </Box>
                                             </Grid>
                                             <Grid item md={3} xs={12} ml={3}>
                                                 <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                                     <Box className='photo-containers'>
-                                                        <Box component='img' src={uki} width='175px' />
+                                                        <Box loading='lazy' component='img' src={uki} width='175px' />
                                                     </Box>
                                                     <Box width='200px'>
                                                         <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Abd. Muqsith</Typography>
-                                                        <Typography color='primary.main' fontSize='0.7rem' fontWeight={700}>Wakil ketua bidang</Typography>
+                                                        <Typography color='primary.main' fontSize='0.7rem' fontWeight={700}>Wakil Ketua Bidang</Typography>
                                                     </Box>
                                                 </Box>
                                             </Grid>
                                             <Grid item md={3} xs={12} ml={3}>
                                                 <Box display='flex' flexDirection='column' alignItems='center' textAlign='center'>
                                                     <Box className='photo-containers'>
-                                                        <Box component='img' src={rere} width='175px' />
+                                                        <Box loading='lazy' component='img' src={rere} width='175px' />
                                                     </Box>
                                                     <Box width='200px'>
                                                         <Typography color='text.main' fontSize='0.8rem' pt={2} fontWeight={500}>Radhiah Mardhiah</Typography>

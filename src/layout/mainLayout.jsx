@@ -8,7 +8,7 @@ export default function MainLayout() {
 
     return (
         <Box>
-            <Box sx={{ mb: '80px' }}>
+            <Box mb='80px'>
                 <Navbar />
             </Box>
             <Box>

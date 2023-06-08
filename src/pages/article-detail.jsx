@@ -1,7 +1,7 @@
 import { Box, Typography } from '@mui/material';
 // import { useParams } from 'react-router-dom';
 // import Footer from '../components/footer';
-import detailPic from '../assets/article/article.png';
+import detailPic from '../assets/article/article.webp';
 
 const ArticleDetail = () => {
     // const { id } = useParams()

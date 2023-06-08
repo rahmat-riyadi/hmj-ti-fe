@@ -14,7 +14,8 @@ const Desc = () => {
             display='flex'
             alignItems='center'
             justifyContent='center'
-            py='72px'
+            py={{ xs: 0, md: '72px' }}
+            pt={{ xs: '72px' }}
             gap={8}
             flexDirection={{ xs: 'column', md: 'row' }}
         >
@@ -48,7 +49,7 @@ const Desc = () => {
                     Himpunan Mahasiswa Jurusan Teknik Informatika (HMJ-TI) adalah organisasi yang mewakili mahasiswa yang belajar di jurusan Teknik Informatika di Universitas Islam Negeri Alauddin Makassar. HMJ-TI bertujuan untuk mempererat hubungan antara mahasiswa, memfasilitasi kegiatan akademik dan
                 </Typography>
                 <NavLink to='/tentang' style={navStyle}>
-                    <Typography fontWeight={600} color='primary.main'>Lihat Selengkapnya</Typography>
+                    <Typography mt={1} fontWeight={600} color='primary.main'>Lihat Selengkapnya</Typography>
                 </NavLink>
             </Box>
         </Box >

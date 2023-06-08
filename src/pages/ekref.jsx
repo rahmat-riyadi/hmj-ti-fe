@@ -76,11 +76,11 @@ const Ekref = () => {
             </Box> */}
 
             <Container maxWidth="xl" sx={{ py: 9, bgcolor: '#F9FAFB' }}>
-                <Grid container spacing={3}>
+                <Grid container spacing={3} px={{ xs: 3, sm: 0 }}>
                     {
-                        [1].map(e => {
+                        [1, 1].map((e, i) => {
                             return (
-                                <Grid item xs={12} sm={12} md={6} justifyContent='center' display='flex'>
+                                <Grid key={i} item xs={12} sm={12} md={6} justifyContent='center' display='flex'>
                                     <Cards.ProductCard />
                                 </Grid>
                             )

@@ -22,17 +22,16 @@ const Footer = () => {
             paddingY: 5
         }}>
             <Box
+                loading='lazy'
                 component='img'
                 src={logo}
                 sx={{
-                    // width: '10%'
                 }}
                 width={{ xs: '30%', sm: '20%', md: '10%' }}
                 my={2}
             />
             <Typography
                 sx={{
-                    // width: '50%',
                     fontSize: '12px',
                     textAlign: 'center',
                     color: 'grey'
@@ -44,6 +43,7 @@ const Footer = () => {
             <Stack direction='row' gap={3} py={3} alignItems='center' justifyContent='center'>
                 <a href="https://www.facebook.com/HMJTIUINAM" target="_blank" rel="noopener noreferrer">
                     <Box
+                        loading='lazy'
                         component='img'
                         src={facebookLogo}
                         width='20px'
@@ -52,6 +52,7 @@ const Footer = () => {
                 </a>
                 <a href="https://www.instagram.com/hmjti_uinam/" target="_blank" rel="noopener noreferrer">
                     <Box
+                        loading='lazy'
                         component='img'
                         src={instagramLogo}
                         width='20px'
@@ -83,9 +84,9 @@ const Footer = () => {
                     />
                 </a>
             </Stack>
-            <Stack>
-                <Stack direction={{ xs: 'column', md: 'row' }} gap={{ xs: 2, md: 10 }} pt={2} pb={8} justifyContent='center' alignItems={{ xs: 'left', md: 'center' }}>
-                    <Stack direction='row' gap={2} justifyContent='center'>
+            <Stack width='75%' >
+                <Stack direction={{ xs: 'column', sm: 'row', md: 'row' }} gap={{ xs: 2, md: 10 }} pt={2} pb={8} justifyContent='center' alignItems={{ xs: 'left', md: 'center' }}>
+                    <Stack direction='row' gap={2} justifyContent='left'>
                         <Box
                             component='img'
                             src={telephoneLogo}
@@ -97,7 +98,7 @@ const Footer = () => {
                             <Typography fontWeight={700} color='primary.main' fontSize={14}>+62 852 5546 5990</Typography>
                         </Box>
                     </Stack>
-                    <Stack direction='row' gap={2} justifyContent='center'>
+                    <Stack direction='row' gap={2} justifyContent='left'>
                         <Box
                             component='img'
                             src={emailLogo}
@@ -109,7 +110,7 @@ const Footer = () => {
                             <Typography fontWeight={700} color='primary.main' fontSize={14}>hmj.ti@uin-alauddin.ac.id</Typography>
                         </Box>
                     </Stack>
-                    <Stack direction='row' gap={2} justifyContent='center'>
+                    <Stack direction='row' gap={2} justifyContent='left'>
                         <Box
                             component='img'
                             src={locationLogo}
@@ -134,9 +135,9 @@ const Footer = () => {
                     justifyContent: 'space-evenly',
                 }}>
                 <Stack direction='row' sx={{ alignItems: 'center' }}>
-                    {menus.map((menu) => (
+                    {menus.map((menu, i) => (
                         <Button
-                            key={menu}
+                            key={i}
                             variant='text'
                             sx={{
                                 color: 'black',

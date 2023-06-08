@@ -18,10 +18,29 @@
     position: relative;
     font-size: 13px;
     text-decoration: none;
-    padding-bottom: 6px;
 }
 
 .link::after {
+    content: '';
+    position: absolute;
+    height: 1.5px;
+    bottom: -4px;
+    left: 0;
+    border-radius: 3px;
+    background: #fff;
+    width: 120px;
+}
+
+.link-mobile {
+    color: #fff;
+    position: relative;
+    font-size: 13px;
+    text-decoration: none;
+    padding-bottom: 6px;
+    display: none;
+}
+
+.link-mobile::after {
     content: '';
     position: absolute;
     height: 1.5px;
@@ -32,11 +51,17 @@
     width: 120px;
 }
 
-.link-mobile {
-    display: none;
+.product {
+    transition: all .5s;
+    object-fit: contain;
+    overflow: hidden;
 }
 
-@media (max-width: 768px) {
+.product img:hover {
+    transform: scale(1.25);
+}
+
+@media (max-width: 900px) {
     .container::after {
         font-size: 96px;
         margin-right: -6px;

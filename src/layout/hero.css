@@ -53,6 +53,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active {
     margin-top: 18px;
     color: #fff;
     width: 90px;
+    opacity: 44%;
+    /* font-weight: 900; */
+    -webkit-text-stroke: 3px;
 }
 
 .ipad-frame {

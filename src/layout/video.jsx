@@ -1,13 +1,13 @@
 import { Stack, Box } from "@mui/material";
 
 const VideoFrame = () => {
-    const src = 'https://www.youtube.com/embed/6ar36Qn6Yh0';
-    const overlay = src + '?wmode=transparent'
+    const src = 'https://www.youtube.com/embed?listType=playlist&list=UUihFFPgjwPnv41vJ_8GmjoQ';
+    const overlay = src + '&wmode=transparent';
 
     return (
         <Stack
             width='100%'
-            height={{ xs: '50vh', sm: '75vh', md: '50vh', lg: '100vh' }}
+            height={{ xs: '40vh', sm: '40vh', md: '50vh', lg: '100vh' }}
             py={{ xs: 0, sm: 0, md: 0, lg: 4 }}
             justifyContent='center'
             alignItems='center'
